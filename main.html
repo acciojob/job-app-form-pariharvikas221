@@ -3,11 +3,50 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+ <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
+ <!-- the entire body must be written by student -->
+ <form method="post">
+  <label for="name">Name*</label>
+  <input name="text" id="name" required><br><br>
+
+  <label for="email">Email*</label>
+  <input name="email" id="email" required><br>
+
+  <p>Gender* 
+  <label for="gender"><input type="radio" id="gender_m" name="gender" required>Male</label>
+  <label for="gender"><input type="radio" id="gender_f" name="gender" required>Female</label>
+  </p>
+
+  <label for="laptop">Laptop Brands</label>
+  <select id="laptop" name="laptop">
+   <option value="select">--Select Laptop--</option>
+   <option value="apple">Apple</option>
+   <option value="asus">Asus</option>
+   <option value="hp">HP</option>
+   
+  </select><br><br>
+
+  <label for="age">Age*</label>
+  <input name="number" id="age" required><br><br>
+
+  <label for="dob">DOB*</label>
+  <input name="date" id="dob" required><br><br>
+  
+  <label for="password">Password*</label>
+  <input name="password" id="password" required><br><br>
+
+  <label for="portfolio"><input type="url" id="portfolio" required></label>
+  <br><br>
+
+  <button type="submit" name="submit" id="submit" >Submit</button>
+  
+ </form>
+ 
+
+ 
     <script type="text/javascript" src="./script.js">
 </script>
 
